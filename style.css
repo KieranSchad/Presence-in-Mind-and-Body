@@ -291,12 +291,6 @@ h3 {
         margin-left: -10px;
     }
 
-    /* Desktop Parallax */
-
-    #parallax {
-        background-attachment: fixed;
-    }
-
     /* Desktop Panels */
 
     .panel-container {
@@ -357,4 +351,14 @@ h3 {
     #About-Corina {
         order: 4;
     }
+}
+
+@media (hover) {
+    
+        /* Desktop Parallax */
+
+        #parallax {
+            background-attachment: fixed;
+        }
+        
 }
