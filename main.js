@@ -49,9 +49,12 @@ document.addEventListener('click', closeSubmenu, false);
 
 // Parallax
 
-// const parallax = document.getElementById("parallax");
+const parallax = document.getElementById("parallax");
 
-// window.addEventListener("scroll", function () {
-//     let offset = window.pageYOffset;
-//     parallax.style.backgroundPositionY = `${offset * -.6}px`;
-// })
+if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    window.addEventListener("scroll", function () {
+        let offset = window.pageYOffset;
+        parallax.style.backgroundPositionY = `${offset * -.6}px`;
+    })
+  }
+
