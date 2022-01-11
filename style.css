@@ -8,6 +8,7 @@ body {
     font-family: 'Rajdhani', sans-serif;
     /* max-width: 1200px; */
     margin: auto;
+    overflow: overlay;
 }
 
 nav {
