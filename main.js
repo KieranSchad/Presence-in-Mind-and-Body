@@ -18,17 +18,25 @@ toggle.addEventListener("click", toggleMenu, false);
 // Submenu
 
 const items = document.querySelectorAll('.menu-item');
+const line = document.getElementById("current-submenu");
 
 function toggleItem() {
+    
     if (this.classList.contains("submenu-active")) {
         this.classList.remove("submenu-active");
+        // line.classList.add("current-page");
+
     } else if (menu.querySelector(".submenu-active")) {
         menu.querySelector(".submenu-active").classList.remove("submenu-active");
-        this.classList.add("submenu-active");
+        this.classList.add("submenu-active"); 
+        
     } else {
         this.classList.add("submenu-active");
+        // line.classList.remove("current-page");
     }
 }
+
+
 
 for (let item of items) {
     if (item.querySelector('.submenu')) {
