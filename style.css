@@ -135,14 +135,14 @@ a {
 
 h1 {
     font-family: 'Fredericka the Great', 'Courier New';
-    font-size: calc(4.68vw + 19px);
+    font-size: calc(3.12vw + 18.72px);
     font-weight: 400;
     text-align: center;
 }
 
 h2 {
     font-family: 'Fredericka the Great', 'Courier New';
-    font-size: calc(3vw + 12px);
+    font-size: calc(2vw + 12px);
     font-weight: 400;
     text-align: center;
 }
@@ -152,19 +152,19 @@ h2 {
 }
 
 .about #parallax {
-    background-image: url("Images/IMG_7900.jpg");
+    background-image: url("Images/IMG_7900_HI.jpg"), url("Images/IMG_7900_LO.jpg");
 }
 
 .events #parallax {
-    background-image: url("Images/IMG_1324.jpg");
+    background-image: url("Images/IMG_1330_HI.jpg"), url("Images/IMG_1330_LO.jpg");
 }
 
 .pricing #parallax {
-    background-image: url("Images/IMG_7775.jpg");
+    background-image: url("Images/IMG_7779_HI.jpg"), url("Images/IMG_7779_LO.jpg");
 }
 
 .contact #parallax {
-    background-image: url("Images/IMG_1915.jpg");
+    background-image: url("Images/IMG_1915_HI.jpg"), url("Images/IMG_1915_LO.jpg");
 
 }
 
