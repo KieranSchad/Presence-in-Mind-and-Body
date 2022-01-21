@@ -153,10 +153,6 @@ h2 {
     background-image: url("Images/IMG_1527_HI.jpg"), url("Images/IMG_1527_LO.jpg");
 }
 
-.about #parallax {
-    background-image: url("Images/IMG_7900_HI.jpg"), url("Images/IMG_7900_LO.jpg");
-}
-
 .events #parallax {
     background-image: url("Images/IMG_1330_HI.jpg"), url("Images/IMG_1330_LO.jpg");
 }
