@@ -35,7 +35,7 @@ a {
 }
 
 .title {
-    font-size: 24px;
+    font-size: calc(1vw + 18px);
     font-weight: 600;
 }
 
@@ -134,21 +134,23 @@ a {
 /* Paralax */
 
 h1 {
-    font-family: 'Fredericka the Great', 'Courier New';
+    font-family: 'Kaushan Script', 'Georgia';
     font-size: calc(3.12vw + 18.72px);
     font-weight: 400;
     text-align: center;
+    text-shadow: 2px 2px 5px #000;
 }
 
 h2 {
-    font-family: 'Fredericka the Great', 'Courier New';
+    font-family: 'Kaushan Script', 'Georgia'; 
     font-size: calc(2vw + 12px);
     font-weight: 400;
     text-align: center;
+    text-shadow: 2px 2px 5px #000;
 }
 
 .home #parallax {
-    background-image: url("Images/IMG_5864_HI.jpg"), url("Images/IMG_5864_LO.jpg");
+    background-image: url("Images/IMG_1527_HI.jpg"), url("Images/IMG_1527_LO.jpg");
 }
 
 .about #parallax {
