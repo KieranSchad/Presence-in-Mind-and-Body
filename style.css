@@ -135,7 +135,7 @@ a {
 
 h1 {
     font-family: 'Kaushan Script', 'Georgia';
-    font-size: calc(3.12vw + 18.72px);
+    font-size: calc(1.56 * (2vw + 15px));
     font-weight: 400;
     text-align: center;
     text-shadow: 2px 2px 5px #000;
@@ -143,7 +143,7 @@ h1 {
 
 h2 {
     font-family: 'Kaushan Script', 'Georgia'; 
-    font-size: calc(2vw + 12px);
+    font-size: calc(2vw + 15px);
     font-weight: 400;
     text-align: center;
     text-shadow: 2px 2px 5px #000;
