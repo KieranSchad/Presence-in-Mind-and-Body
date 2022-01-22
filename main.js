@@ -71,7 +71,7 @@ if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navig
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: 40.06345482955475, lng: -75.69419694109949},
-        zoom: 13,
+        zoom: 12,
         mapId: '94f4ecf15b833169',
         disableDefaultUI: true,
         });
