@@ -70,8 +70,8 @@ if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navig
 
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 40.006287, lng: -75.707786},
-        zoom: 15,
+        center: {lat: 40.06345482955475, lng: -75.69419694109949},
+        zoom: 12,
         mapId: '94f4ecf15b833169',
         disableDefaultUI: true,
         });
@@ -86,8 +86,14 @@ function initMap() {
         anchor: new google.maps.Point(13, 22),
         };
 
-    const marker = new google.maps.Marker({
+    const marker1 = new google.maps.Marker({
         position: {lat: 40.006287, lng: -75.707786},
+        icon: svgMarker,
+        map: map,
+        });
+
+    const marker2 = new google.maps.Marker({
+        position: {lat: 40.11155000083765, lng: -75.70345913636957},
         icon: svgMarker,
         map: map,
         });

@@ -157,7 +157,7 @@ h2 {
     background-image: url("Images/IMG_1330_HI.jpg"), url("Images/IMG_1330_LO.jpg");
 }
 
-.pricing #parallax {
+.sessions #parallax {
     background-image: url("Images/IMG_7779_HI.jpg"), url("Images/IMG_7779_LO.jpg");
 }
 
@@ -211,6 +211,7 @@ h3 {
     font-size: 20px;
     font-weight: 600;
     padding: 25px 0;
+    color: #555;
 }
 
 .panels p {
@@ -232,6 +233,31 @@ h3 {
 
 .wide-segment, .thin-segment {
     text-align: center;
+    padding: 10px 0;
+}
+
+/* Contact */
+
+.contact-methods {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 35px;
+    
+}
+
+.contact-text {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.contact-methods h3 {
+    padding: 0;
+}
+
+.contact-methods .fas {
+    font-size: 32px;
+    width: 100%;
+    color: #555;
     padding: 10px 0;
 }
 
@@ -333,6 +359,16 @@ h3 {
 
     .panels h3 {
         height: 80px;
+    }
+
+    /* Desktop Contact */
+
+    .contact-text {
+        width: auto;
+    }
+
+    .contact-methods .fas {
+        width: 60px;
     }
 
     /* Desktop Segments */
