@@ -34,9 +34,10 @@ a {
     list-style-type: none;
 }
 
-.title {
+.title a {
     font-size: calc(1vw + 18px);
-    font-weight: 600;
+    font-weight: 400;
+    font-family: 'Kaushan script', 'Georgia';
 }
 
 
@@ -134,7 +135,7 @@ a {
 /* Paralax */
 
 h1 {
-    font-family: 'Kaushan Script', 'Georgia';
+    font-family: 'fredericka the great', 'Georgia';
     font-size: calc(1.56 * (2vw + 15px));
     font-weight: 400;
     text-align: center;
@@ -142,7 +143,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Kaushan Script', 'Georgia'; 
+    font-family: 'fredericka the great', 'Georgia'; 
     font-size: calc(2vw + 15px);
     font-weight: 400;
     text-align: center;
@@ -234,6 +235,7 @@ h3 {
 .wide-segment, .thin-segment {
     text-align: center;
     padding: 10px 0;
+    width: 100%;
 }
 
 /* Contact */
@@ -242,7 +244,6 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 35px;
-    
 }
 
 .contact-text {
@@ -264,7 +265,8 @@ h3 {
 /* Map */
 
 #map {
-    height: 90vh;
+    height: 85vh;
+    border-radius: 5px;
 }
 
 /* Footer */
@@ -363,12 +365,21 @@ h3 {
 
     /* Desktop Contact */
 
+
+
     .contact-text {
-        width: auto;
+        width: 250px;
     }
 
     .contact-methods .fas {
         width: 60px;
+    }
+
+    /* Desktop Map */
+
+    #map {
+        order: 2;
+        height: auto;
     }
 
     /* Desktop Segments */
@@ -378,20 +389,21 @@ h3 {
         max-width: 100%;
         margin: auto;
         padding: 2vw 15px;
-        align-items: start;
+        align-items: stretch;
     }
 
     .wide-segment {
-        width: calc(75% - 110px);
+        width: calc(75% - 130px);
         text-align: left;
-        padding: 3vw 0;
-        margin: 0;
+        margin: 3vw 0;
+        padding: 0;
     }
 
     .thin-segment {
-        width: calc(25% + 90px);
-        margin: 0;
-        padding: 3vw 0;
+        width: calc(25% + 110px);
+        text-align: left;
+        padding: 0;
+        margin: 3vw 0;
         }
 
     .thin-segment .images {
@@ -408,12 +420,14 @@ h3 {
     #picture-1 {
         order: 2;
     }
+    
     #picture-2 {
         order: 3;
     }
     #segment-2 {
         order: 4;
     }
+
 }
 
 @media (hover) {
@@ -427,7 +441,9 @@ h3 {
     .menu-item a:not(.submenu-item a):hover,
     .menu-item a:hover::after,
     .title a:hover,
-    .toggle a:hover {
+    .toggle a:hover,
+    .contact-text a h3:hover,
+    .contact-text a p:hover {
         color: #222;
         cursor: pointer;
         
