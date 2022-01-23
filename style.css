@@ -172,9 +172,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: calc(32% + 200px);
-    margin: auto;
-    border-radius: 5px;
+    width: 100%;
     background-size: cover;
     background-attachment: scroll;
     background-position-x: center; 
@@ -341,12 +339,6 @@ h3 {
 
     .submenu li {
         padding: 15px 0;
-    }
-
-    /* Desktop Parallax */
-    
-    #parallax {
-        width: calc(50% + 360px);
     }
 
     /* Desktop Panels */
