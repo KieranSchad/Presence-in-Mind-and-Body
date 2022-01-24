@@ -25,6 +25,7 @@ p {
 a {
     color: #555;
     text-decoration: none;
+    font-size: 18px;
 }
 
 /* Mobile menu */
@@ -58,7 +59,6 @@ a {
 }
 
 .menu-item {
-    font-size: 18px;
     font-weight: 600;
     order: 2;
     width: 100%;
@@ -155,7 +155,7 @@ h2 {
 }
 
 .events #parallax {
-    background-image: url("Images/IMG_1330_HI.jpg"), url("Images/IMG_1330_LO.jpg");
+    background-image: url("Images/IMG_7900_HI.jpg"), url("Images/IMG_7900_LO.jpg");
 }
 
 .sessions #parallax {
@@ -192,6 +192,14 @@ h2 {
     width: 100%;
 }
 
+/* Mobile Main Page */
+
+main {
+    width: calc(32% + 200px);
+    max-width: 100%;
+    margin: auto;
+}
+
 /* Mobile Panels */
 
 .panel-container {
@@ -200,13 +208,10 @@ h2 {
     justify-content: space-between;
     align-items: center;
     padding: 1.5vw 0;
-    width: calc(32% + 200px);
-    max-width: 100%;
-    margin: auto;
+    width: 100%;
 }
 
 .panels {
-    text-align: center;
     padding: 15px 0;
     border-bottom: solid 2px transparent;
     border-top: solid 2px transparent;
@@ -217,6 +222,7 @@ h3 {
     font-weight: 600;
     padding: 25px 0;
     color: #555;
+    text-align: center;
 }
 
 .panels p {
@@ -231,15 +237,21 @@ h3 {
     justify-content: space-between;
     align-items: center;
     padding: 1.5vw 0;
-    width: calc(32% + 200px);
-    max-width: 100%;
-    margin: auto;
+    width: 100%;
 }
 
 .wide-segment, .thin-segment {
-    text-align: center;
     padding: 10px 0;
     width: 100%;
+}
+
+/* Events */
+
+.events-doc {
+    width: 100%;
+    border: none;
+    height: calc(1800px - 40vw);
+    padding: 20px 0;
 }
 
 /* Contact */
@@ -248,6 +260,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 35px;
+    text-align: center;
 }
 
 .contact-text {
@@ -278,8 +291,35 @@ h3 {
 
 .footer {
     background-color: #B52424;
-    height: 10vh;
+    min-height: 80px;
 }
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: calc(32% + 200px);
+    max-width: 100%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.footer-item {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-item a {
+    color: white;
+}
+
+.fa-facebook {
+    font-size: calc(1vw + 24px);
+}
+
 
 @media all and (min-width: 650px) {
 
@@ -298,7 +338,7 @@ h3 {
         max-width: 100%;
     }
 
-    .title {
+    .menu .title {
         order: 0;
         width: 100%;
         text-align: center;
@@ -341,18 +381,28 @@ h3 {
         padding: 15px 0;
     }
 
-    /* Desktop Panels */
+    /* Desktop Main Page */
 
-    .panel-container {
+    main {
         width: calc(50% + 360px);
         max-width: 100%;
         margin: auto;
+    }
+
+    h3 {
+        text-align: left;
+    }
+
+    /* Desktop Panels */
+
+    .panel-container {
         padding: 6vw 15px;
     }
     .panels {
         width: calc(20% + 50px);
         padding: 0;
         margin: 0;
+        text-align: center;
     }
 
     .panels .images {
@@ -361,11 +411,14 @@ h3 {
 
     .panels h3 {
         height: 80px;
+        text-align: center;
     }
 
     /* Desktop Contact */
 
-
+    .contact-methods {
+        text-align: left;
+    }
 
     .contact-text {
         width: 250px;
@@ -385,23 +438,18 @@ h3 {
     /* Desktop Segments */
 
     .segment-container {
-        width: calc(50% + 360px);
-        max-width: 100%;
-        margin: auto;
         padding: 2vw 15px;
         align-items: stretch;
     }
 
     .wide-segment {
         width: calc(75% - 130px);
-        text-align: left;
         margin: 3vw 0;
         padding: 0;
     }
 
     .thin-segment {
         width: calc(25% + 110px);
-        text-align: left;
         padding: 0;
         margin: 3vw 0;
         }
@@ -412,6 +460,11 @@ h3 {
 
     .wide-segment h3 {
         padding-top: 0;
+        text-align: left;
+    }
+
+    .events-doc {
+        padding: 0;
     }
     
     #segment-1 {
@@ -428,6 +481,18 @@ h3 {
         order: 4;
     }
 
+    /* Desktop Footer */
+
+    .footer-container {
+        width: calc(50% + 360px);
+        max-width: 100%;
+    }
+
+    .footer-item {
+        width: auto;
+        padding: 15px;
+    }
+
 }
 
 @media (hover) {
@@ -438,7 +503,7 @@ h3 {
 
     .menu-item a:not(.submenu-item a):hover,
     .menu-item a:hover::after,
-    .title a:hover,
+    .menu .title a:hover,
     .toggle a:hover,
     .contact-text a h3:hover,
     .contact-text a p:hover {
@@ -459,6 +524,10 @@ h3 {
 
     .submenu-item a:hover {
         border-bottom: solid 2px white;
+    }
+
+    .footer a:hover {
+        text-shadow: 0px 0px 2px #fff;      
     }
 
 }
