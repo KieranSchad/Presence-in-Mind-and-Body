@@ -190,7 +190,8 @@ h2 {
 .overlay {
     position:absolute;
     transform: translateZ(-0.5px) scale(calc(1/0.95));
-    height: 230px;
+    height: calc(35vw);
+    max-height: 230px;
     width: calc(32% + 200px);
     max-width: 100%;
     border-radius: 5px;
