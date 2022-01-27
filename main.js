@@ -55,17 +55,6 @@ function closeSubmenu(e) {
 
 document.addEventListener('click', closeSubmenu, false);
 
-// Parallax
-
-const parallax = document.getElementById("parallax");
-
-if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    window.addEventListener("scroll", function () {
-        let offset = window.pageYOffset;
-        parallax.style.backgroundPositionY = `${offset * -.6}px`;
-    })
-  }
-
 // Map
 
 function initMap() {
