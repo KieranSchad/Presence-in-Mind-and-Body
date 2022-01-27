@@ -174,7 +174,6 @@ h2 {
     max-height: 600px;
     transform-style: preserve-3d;
     z-index: -1;
-    
 }
 
 .background {
@@ -185,6 +184,7 @@ h2 {
     object-fit: cover;
     z-index: -3;
     transform: translateZ(-0.7px) scale(1.7);
+    background-color: #555;
 }
 
 .overlay {
