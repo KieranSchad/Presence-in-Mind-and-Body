@@ -94,17 +94,19 @@ nav {
     border-bottom: solid 2px transparent;
     }
 
-.logo {
+.menu .logo {
     order: 3;
     display: block;
     width: 100%;
-    margin: auto;
-    text-align: center;
 }
 
-.logo-image {
-    width: 30vw;
-    max-width: 125px;
+.menu li .logo-image {
+    display: block;
+    width: 125px;
+    margin:auto;
+    height: 125px;
+    background-image: url("Logo/Presence 3.png");
+    background-size: 125px;
 }
 
 /* Submenu */
@@ -171,13 +173,13 @@ nav {
     width: 100vw;
     object-fit: cover;
     z-index: -3;
-    transform: translateZ(-0.7px) scale(1.7);
+    transform: translateZ(-1px) scale(2);
     background-color: #555;
 }
 
 .overlay {
     position:absolute;
-    transform: translateZ(0.05px) scale(0.95);
+    transform: translateZ(-0.5px) scale(1.5);
     
     height: 200px;
     width: calc(32% + 200px);
@@ -194,12 +196,13 @@ h2 {
     font-weight: 400;
     text-align: center;
     text-shadow: 0 0 2px #000;
-    transform: translateZ(0.1px) scale(0.9);
+    transform: translateZ(-0.4px) scale(1.4);
     color: #fff;
 }
 
 h2 {
     font-size: calc(2vw + 12px);
+    padding-top: 30px;
 }
 
 /* Mobile Images */
@@ -400,7 +403,7 @@ h3 {
         order: 1;
     }
 
-    .logo {
+    .menu .logo {
         order: 2;
         width: 22%;
     }
