@@ -180,12 +180,12 @@ nav {
 .overlay {
     position:absolute;
     transform: translateZ(-0.5px) scale(1.5);
-    
-    height: 200px;
+    height: calc(12vw + 75px);
+    max-height: 200px;
     width: calc(32% + 200px);
     max-width: 100%;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
     z-index: -2;
 }
 
@@ -195,7 +195,7 @@ h2 {
     font-size: calc(1.56 * (2vw + 12px));
     font-weight: 400;
     text-align: center;
-    text-shadow: 0 0 2px #000;
+    /* text-shadow: 0 0 2px #000; */
     transform: translateZ(-0.4px) scale(1.4);
     color: #fff;
 }
