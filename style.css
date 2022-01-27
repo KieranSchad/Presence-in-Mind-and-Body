@@ -193,7 +193,7 @@ h2 {
     font-size: calc(1.56 * (2vw + 12px));
     font-weight: 400;
     text-align: center;
-    text-shadow: 0 0 10px #000;
+    text-shadow: 0 0 2px #000;
     transform: translateZ(0.1px) scale(0.9);
     color: #fff;
 }

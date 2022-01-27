@@ -89,3 +89,24 @@ function initMap() {
 }
 
 // M10.453 14.016l6.563-6.609-1.406-1.406-5.156 5.203-2.063-2.109-1.406 1.406z
+
+
+// Image preloader
+
+(() => {
+    'use strict';
+    // Page is loaded
+    const objects = document.getElementsByClassName('asyncImage');
+    Array.from(objects).map((item) => {
+      // Start loading image
+      const img = new Image();
+      img.src = item.dataset.src;
+      // Once image is loaded replace the src of the HTML element
+      img.onload = () => {
+        item.classList.remove('asyncImage');
+        return item.nodeName === 'IMG' ? 
+          item.src = item.dataset.src :        
+          item.style.backgroundImage = `url(${item.dataset.src})`;
+      };
+    });
+  })();
