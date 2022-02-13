@@ -627,3 +627,20 @@ h3 {
     }
 
 }
+
+.photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background: black;
+}
+
+.photo-item {
+    height: 30vh;
+    margin: 10px;
+    border: solid black;
+}
+
+.photo {
+    height: 100%;
+}
