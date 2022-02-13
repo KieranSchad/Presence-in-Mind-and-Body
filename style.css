@@ -16,6 +16,7 @@ body {
 p {
     color: #555;
     font-size: 18px;
+    padding-bottom: 18px;
 }
 
 a {
@@ -241,7 +242,7 @@ main {
 h3 {
     font-size: 20px;
     font-weight: 600;
-    padding: 25px 0;
+    padding: 18px 0;
     color: #555;
     text-align: center;
 }
@@ -516,14 +517,16 @@ h3 {
 
     .thin-segment {
         width: calc(25% + 110px);
-        padding: 0;
         margin: 3vw 0;
+        padding: 0;
         }
 
+    .wide-segment .images,
     .thin-segment .images {
         width: 100%;
         }
 
+    .thin-segment h3,
     .wide-segment h3 {
         padding-top: 0;
         text-align: left;
@@ -546,6 +549,13 @@ h3 {
     #segment-2 {
         order: 4;
     }
+    #segment-3 {
+        order: 5;
+    }
+    #picture-3 {
+        order: 6;
+    }
+
 
     /* Desktop Footer */
 
