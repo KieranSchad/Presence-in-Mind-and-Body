@@ -175,7 +175,7 @@ nav {
     object-fit: cover;
     z-index: -3;
     transform: translateZ(-0.8px) scale(1.8);
-    background-color: #555;
+    background-color: #fff;
 }
 
 .overlay {
