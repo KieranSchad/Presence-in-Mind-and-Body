@@ -264,7 +264,9 @@ h3 {
     margin: auto;
 }
 
-.wide-segment, .thin-segment {
+.full-segment,
+.wide-segment, 
+.thin-segment {
     padding: 10px 0;
     width: 100%;
 }
@@ -510,13 +512,13 @@ h3 {
     }
 
     .wide-segment {
-        width: calc(75% - 130px);
+        width: calc(75% - 140px);
         margin: 3vw 0;
         padding: 0;
     }
 
     .thin-segment {
-        width: calc(25% + 110px);
+        width: calc(25% + 100px);
         margin: 3vw 0;
         padding: 0;
         }
